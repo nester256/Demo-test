@@ -7,12 +7,12 @@ COPY . /app
 RUN mvn -f /app/pom.xml clean package -Dmaven.test.skip=true
 
 # Стадия запуска
-FROM adoptopenjdk/openjdk17:alpine
+FROM openjdk:17-oracle
 
 WORKDIR /app
 
-COPY --from=builder /app/target/*.jar /app/your-application.jar
+COPY --from=builder /app/target/*.jar /app/*.jar
 
 EXPOSE 8000
 
-ENTRYPOINT ["java", "-jar", "/app/your-application.jar"]
+ENTRYPOINT ["java", "-jar", "/app/*.jar"]
