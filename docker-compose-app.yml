@@ -1,0 +1,13 @@
+services:
+    backend:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8000:8000"
+#        depends_on:
+#            - service-db
+        environment:
+            - SERVER_PORT= 8000
+#            - SPRING_DATASOURCE_URL=jdbc:postgresql://service-db/main_db
+            - DOCKER_DEFAULT_PLATFORM=linux/amd64
