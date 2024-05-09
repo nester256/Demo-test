@@ -1,0 +1,59 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "io.grpc.demo.service";
+option java_outer_classname = "ServiceProto";
+
+import "google/protobuf/empty.proto";
+
+message Service {
+    int32 id = 1;
+    string name = 2;
+    string language = 3;
+}
+
+message Pagination {
+    int32 currentPage = 1;
+    int32 itemsPerPage = 2;
+    int32 totalPages = 3;
+    int64 totalItems = 4;
+}
+
+service ServicesService {
+    rpc FindService(FindServiceRequest) returns (FindServiceResponse);
+    rpc GetService(GetServiceRequest) returns (Service);
+    rpc CreateService(CreateServiceRequest) returns (google.protobuf.Empty);
+    rpc UpdateService(UpdateServiceRequest) returns (google.protobuf.Empty);
+    rpc DeleteService(DeleteServiceRequest) returns (DeleteServiceResponse);
+}
+
+message GetServiceRequest {
+    int64 id = 1;
+}
+
+message CreateServiceRequest {
+    Service service = 1;
+}
+
+message UpdateServiceRequest {
+    int32 id = 1;
+    Service service = 2;
+}
+
+message DeleteServiceRequest {
+    int32 id = 1;
+}
+
+message DeleteServiceResponse {
+    bool success = 1;
+}
+
+message FindServiceRequest {
+    optional Pagination pagination = 1;
+    optional string search = 2;
+    repeated int64 ids = 3;
+}
+
+message FindServiceResponse {
+    repeated Service service = 1;
+    Pagination pagination = 2;
+}

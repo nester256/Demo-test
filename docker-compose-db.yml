@@ -4,7 +4,7 @@ services:
 
   service-db:
     container_name: db
-    image: postgres:14.7-alpine
+    image: postgres:15-alpine
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
@@ -21,4 +21,3 @@ services:
 
 volumes:
   prom_data:
-

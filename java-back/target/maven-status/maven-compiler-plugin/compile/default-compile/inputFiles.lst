@@ -1,0 +1,15 @@
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/service/ServicesService.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/DemoApplication.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/model/filter/ServiceFilter.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/controller/exсeptions/ValidationException.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/mapper/ServicesMapper.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/controller/exсeptions/ServiceNotFoundException.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/model/Services.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/service/impl/specification/ServiceGrpcService.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/controller/CustomExceptionHandler.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/model/dto/ServicesDto.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/service/impl/specification/ServicesSpecification.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/controller/ServicesController.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/validator/ServicesValidator.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/service/impl/ServicesServiceImpl.java
+/Users/vladiknesterov/Desktop/demo_test/java-back/src/main/java/com/example/demo/repository/ServicesRepository.java
